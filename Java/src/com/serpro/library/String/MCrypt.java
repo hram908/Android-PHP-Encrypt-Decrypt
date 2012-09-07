@@ -16,9 +16,10 @@ public class MCrypt {
         private IvParameterSpec ivspec;
         private SecretKeySpec keyspec;
         private Cipher cipher;
-
+	static final char[] HEX_CHARS = "0123456789abcdef".toCharArray();
         private String SecretKey = "0123456789abcdef";//Dummy secretKey (CHANGE IT!)
-
+	
+	
         public MCrypt()
         {
                 ivspec = new IvParameterSpec(iv.getBytes());
